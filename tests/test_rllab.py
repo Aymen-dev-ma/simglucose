@@ -12,12 +12,12 @@ register(
 class testRLLab(unittest.TestCase):
     def test_rllab(self):
         try:
-            from rllab.algos.ddpg import DDPG
-            from rllab.envs.normalized_env import normalize
-            from rllab.exploration_strategies.ou_strategy import OUStrategy
-            from rllab.policies.deterministic_mlp_policy import DeterministicMLPPolicy
-            from rllab.q_functions.continuous_mlp_q_function import ContinuousMLPQFunction
-            from rllab.envs.gym_env import GymEnv
+            from rllab.rllab.algos.ddpg import DDPG
+            from rllab.rllab.envs.normalized_env import normalize
+            from rllab.rllab.exploration_strategies.ou_strategy import OUStrategy
+            from rllab.rllab.policies.deterministic_mlp_policy import DeterministicMLPPolicy
+            from rllab.rllab.q_functions.continuous_mlp_q_function import ContinuousMLPQFunction
+            from rllab.rllab.envs.gym_env import GymEnv
         except ImportError:
             print('rllab is not installed!')
             return None
