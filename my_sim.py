@@ -1,26 +1,23 @@
 import gym
 import numpy as np
 from stable_baselines3 import PPO
+from simglucose.envs import T1DSimEnv
 
 import matplotlib.pyplot as plt
 
 # Define your custom environment
-class MyEnvironment(gym.Env):
+class MyEnvironment(T1DSimEnv):
     def __init__(self):
-        # Initialize your environment here
-        pass
+        super().__init__()
 
     def reset(self):
-        # Reset the environment to its initial state
-        pass
+        return super().reset()
 
     def step(self, action):
-        # Take a step in the environment based on the given action
-        pass
+        return super().step(action)
 
     def render(self):
-        # Render the environment (e.g., plot figures)
-        pass
+        super().render()
 
 # Create an instance of your custom environment
 env = MyEnvironment()
